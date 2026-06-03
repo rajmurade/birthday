@@ -8,7 +8,6 @@ function showPage(id){
 /* PAGE 1 */
 function start(){
 
-    // 🎵 play music (must be user click)
     let music = document.getElementById("bgmusic");
     music.volume = 0.3;
     music.play();
