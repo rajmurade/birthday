@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Surprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgmusic" loop>
+    <source src="assets/audio/song.mp3" type="audio/mp3">
+</audio>
+
+<!-- PAGE 1 -->
+<div class="screen active" id="page1">
+    <h1 class="title">A small surprise for you ✨</h1>
+    <button onclick="start()">Open Surprise</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="screen" id="page2">
+    <h1 id="hbdText"></h1>
+
+    <div class="envelope" onclick="openLetter()"></div>
+
+    <div class="letter" id="letter">
+        <p>
+        Another year older, but still the same solid person I know. Wishing you good health, peace of mind, and success in whatever you’re chasing. Don’t overthink life too much this year—just keep moving forward and enjoy the process. We’ll make more memories ahead. Hope you don't cry on any birthdays ever.....
+        </p>
+
+        <button onclick="gift()">Gift 🎁</button>
+    </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="screen" id="page3">
+    <h2>Since you asked for a kitkat, here's yours</h2>
+    <img src="assets/images/kitten.png" alt="kitten">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
