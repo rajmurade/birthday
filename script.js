@@ -1,30 +1,20 @@
-function showPage(id){
-    document.querySelectorAll(".screen").forEach(s=>{
-        s.classList.remove("active");
-    });
-    document.getElementById(id).classList.add("active");
-}
-
-/* PAGE 1 */
 function start(){
 
     let music = document.getElementById("bgmusic");
     music.volume = 0.3;
     music.play();
 
-    document.getElementById("hbdText").innerText = "Happy Birthday 🎉";
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "flex";
 
-    setTimeout(()=>{
-        showPage("page2");
-    }, 800);
+    document.getElementById("hbdText").innerText = "Happy Birthday 🎉";
 }
 
-/* LETTER */
 function openLetter(){
     document.getElementById("letter").style.display = "block";
 }
 
-/* GIFT PAGE */
 function gift(){
-    showPage("page3");
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "flex";
 }
